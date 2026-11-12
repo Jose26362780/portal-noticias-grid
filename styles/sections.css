@@ -22,9 +22,22 @@
       bottom: 0;
       padding: 24px;
 
+      &:has(.text-lg) {
+        padding: 12px;
+      }
+
       h2 {
         margin-top: 8px;
       }
     }
+  }
+
+  /*Ele coloca as linhas do card para 3 linhas limitando a quantidade do conteudo */
+
+  .card h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 }
